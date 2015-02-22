@@ -62,4 +62,8 @@ class IntelFan:
 
 
 if __name__ == "__main__":
-    print IntelFan().ascii2bin(argv[1:])
+    for i in argv[1:]:
+        if len(i) > 20:
+            print "String to big (max = 20 chars)"
+        else:
+            print IntelFan().ascii2bin(argv[1:])
